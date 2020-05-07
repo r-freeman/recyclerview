@@ -5,7 +5,15 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class MovieAdapter extends RecyclerView.Adapter {
+    private final List<MovieEntity> mMovies;
+
+    // constructor for the dataset
+    public MovieAdapter(List<MovieEntity> mMovies) {
+        this.mMovies = mMovies;
+    }
 
     // creates new views, called by the LayoutManager
     @NonNull
