@@ -31,6 +31,6 @@ public class MovieAdapter extends RecyclerView.Adapter {
     // returns the size of the dataset to the LayoutManager
     @Override
     public int getItemCount() {
-        return 0;
+        return mMovies.size();
     }
 }
