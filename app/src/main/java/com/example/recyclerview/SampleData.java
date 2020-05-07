@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SampleData {
-    public static final String SAMPLE_MOVIE_THUMBNAIL_0 = "movie_thumb_0.jpg";
-    public static final String SAMPLE_MOVIE_THUMBNAIL_1 = "movie_thumb_1.jpg";
-    public static final String SAMPLE_MOVIE_THUMBNAIL_2 = "movie_thumb_2.jpg";
-    public static final String SAMPLE_MOVIE_THUMBNAIL_3 = "movie_thumb_3.jpg";
-    public static final String SAMPLE_MOVIE_THUMBNAIL_4 = "movie_thumb_4.jpg";
-    public static final String SAMPLE_MOVIE_THUMBNAIL_5 = "movie_thumb_5.jpg";
-    public static final String SAMPLE_MOVIE_THUMBNAIL_6 = "movie_thumb_6.jpg";
-    public static final String SAMPLE_MOVIE_THUMBNAIL_7 = "movie_thumb_7.jpg";
-    public static final String SAMPLE_MOVIE_THUMBNAIL_8 = "movie_thumb_8.jpg";
-    public static final String SAMPLE_MOVIE_THUMBNAIL_9 = "movie_thumb_9.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_0 = "movie_thumb_0";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_1 = "movie_thumb_1";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_2 = "movie_thumb_2";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_3 = "movie_thumb_3";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_4 = "movie_thumb_4";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_5 = "movie_thumb_5";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_6 = "movie_thumb_6";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_7 = "movie_thumb_7";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_8 = "movie_thumb_8";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_9 = "movie_thumb_9";
 
 
     public static final String SAMPLE_MOVIE_TITLE_0 = "The Shawshank Redemption";
