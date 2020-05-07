@@ -13,14 +13,16 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = "Movies";
 
     private RecyclerView recyclerView;
+    private _MovieAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
+    private List<MovieEntity> movies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        List<MovieEntity> movies = SampleData.getMovies();
+        movies = SampleData.getMovies();
 
         for (MovieEntity movie : movies) {
             Log.i(TAG, movie.toString());
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        // TODO: add an adapter
+        mAdapter = new _MovieAdapter(movies, MainActivity.this);
+        recyclerView.setAdapter(mAdapter);
     }
 }
