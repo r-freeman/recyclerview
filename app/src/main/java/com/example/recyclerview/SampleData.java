@@ -4,6 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SampleData {
+    public static final String SAMPLE_MOVIE_THUMBNAIL_0 = "movie_thumb_0.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_1 = "movie_thumb_1.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_2 = "movie_thumb_2.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_3 = "movie_thumb_3.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_4 = "movie_thumb_4.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_5 = "movie_thumb_5.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_6 = "movie_thumb_6.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_7 = "movie_thumb_7.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_8 = "movie_thumb_8.jpg";
+    public static final String SAMPLE_MOVIE_THUMBNAIL_9 = "movie_thumb_9.jpg";
+
+
     public static final String SAMPLE_MOVIE_TITLE_0 = "The Shawshank Redemption";
     public static final String SAMPLE_MOVIE_TITLE_1 = "The Godfather";
     public static final String SAMPLE_MOVIE_TITLE_2 = "The Dark Knight";
@@ -37,30 +49,18 @@ public class SampleData {
     public static final int SAMPLE_MOVIE_YEAR_8 = 2010;
     public static final int SAMPLE_MOVIE_YEAR_9 = 1999;
 
-    public static final double SAMPLE_MOVIE_RATING_0 = 9.3;
-    public static final double SAMPLE_MOVIE_RATING_1 = 9.2;
-    public static final double SAMPLE_MOVIE_RATING_2 = 9.0;
-    public static final double SAMPLE_MOVIE_RATING_3 = 9.0;
-    public static final double SAMPLE_MOVIE_RATING_4 = 8.9;
-    public static final double SAMPLE_MOVIE_RATING_5 = 8.9;
-    public static final double SAMPLE_MOVIE_RATING_6 = 8.9;
-    public static final double SAMPLE_MOVIE_RATING_7 = 8.9;
-    public static final double SAMPLE_MOVIE_RATING_8 = 8.8;
-    public static final double SAMPLE_MOVIE_RATING_9 = 8.8;
-
-
     public static List<MovieEntity> getMovies() {
         List<MovieEntity> movies = new ArrayList<>();
-        movies.add(new MovieEntity(1, SAMPLE_MOVIE_TITLE_0, SAMPLE_MOVIE_SYNOPSIS_0, SAMPLE_MOVIE_YEAR_0, SAMPLE_MOVIE_RATING_0));
-        movies.add(new MovieEntity(2, SAMPLE_MOVIE_TITLE_1, SAMPLE_MOVIE_SYNOPSIS_1, SAMPLE_MOVIE_YEAR_1, SAMPLE_MOVIE_RATING_1));
-        movies.add(new MovieEntity(3, SAMPLE_MOVIE_TITLE_2, SAMPLE_MOVIE_SYNOPSIS_2, SAMPLE_MOVIE_YEAR_2, SAMPLE_MOVIE_RATING_2));
-        movies.add(new MovieEntity(4, SAMPLE_MOVIE_TITLE_3, SAMPLE_MOVIE_SYNOPSIS_3, SAMPLE_MOVIE_YEAR_3, SAMPLE_MOVIE_RATING_3));
-        movies.add(new MovieEntity(5, SAMPLE_MOVIE_TITLE_4, SAMPLE_MOVIE_SYNOPSIS_4, SAMPLE_MOVIE_YEAR_4, SAMPLE_MOVIE_RATING_4));
-        movies.add(new MovieEntity(6, SAMPLE_MOVIE_TITLE_5, SAMPLE_MOVIE_SYNOPSIS_5, SAMPLE_MOVIE_YEAR_5, SAMPLE_MOVIE_RATING_5));
-        movies.add(new MovieEntity(7, SAMPLE_MOVIE_TITLE_6, SAMPLE_MOVIE_SYNOPSIS_6, SAMPLE_MOVIE_YEAR_6, SAMPLE_MOVIE_RATING_6));
-        movies.add(new MovieEntity(8, SAMPLE_MOVIE_TITLE_7, SAMPLE_MOVIE_SYNOPSIS_7, SAMPLE_MOVIE_YEAR_7, SAMPLE_MOVIE_RATING_7));
-        movies.add(new MovieEntity(9, SAMPLE_MOVIE_TITLE_8, SAMPLE_MOVIE_SYNOPSIS_8, SAMPLE_MOVIE_YEAR_8, SAMPLE_MOVIE_RATING_8));
-        movies.add(new MovieEntity(10, SAMPLE_MOVIE_TITLE_9, SAMPLE_MOVIE_SYNOPSIS_9, SAMPLE_MOVIE_YEAR_9, SAMPLE_MOVIE_RATING_9));
+        movies.add(new MovieEntity(1, SAMPLE_MOVIE_THUMBNAIL_0, SAMPLE_MOVIE_TITLE_0, SAMPLE_MOVIE_SYNOPSIS_0, SAMPLE_MOVIE_YEAR_0));
+        movies.add(new MovieEntity(2, SAMPLE_MOVIE_THUMBNAIL_1, SAMPLE_MOVIE_TITLE_1, SAMPLE_MOVIE_SYNOPSIS_1, SAMPLE_MOVIE_YEAR_1));
+        movies.add(new MovieEntity(3, SAMPLE_MOVIE_THUMBNAIL_2, SAMPLE_MOVIE_TITLE_2, SAMPLE_MOVIE_SYNOPSIS_2, SAMPLE_MOVIE_YEAR_2));
+        movies.add(new MovieEntity(4, SAMPLE_MOVIE_THUMBNAIL_3, SAMPLE_MOVIE_TITLE_3, SAMPLE_MOVIE_SYNOPSIS_3, SAMPLE_MOVIE_YEAR_3));
+        movies.add(new MovieEntity(5, SAMPLE_MOVIE_THUMBNAIL_4, SAMPLE_MOVIE_TITLE_4, SAMPLE_MOVIE_SYNOPSIS_4, SAMPLE_MOVIE_YEAR_4));
+        movies.add(new MovieEntity(6, SAMPLE_MOVIE_THUMBNAIL_5, SAMPLE_MOVIE_TITLE_5, SAMPLE_MOVIE_SYNOPSIS_5, SAMPLE_MOVIE_YEAR_5));
+        movies.add(new MovieEntity(7, SAMPLE_MOVIE_THUMBNAIL_6, SAMPLE_MOVIE_TITLE_6, SAMPLE_MOVIE_SYNOPSIS_6, SAMPLE_MOVIE_YEAR_6));
+        movies.add(new MovieEntity(8, SAMPLE_MOVIE_THUMBNAIL_7, SAMPLE_MOVIE_TITLE_7, SAMPLE_MOVIE_SYNOPSIS_7, SAMPLE_MOVIE_YEAR_7));
+        movies.add(new MovieEntity(9, SAMPLE_MOVIE_THUMBNAIL_8, SAMPLE_MOVIE_TITLE_8, SAMPLE_MOVIE_SYNOPSIS_8, SAMPLE_MOVIE_YEAR_8));
+        movies.add(new MovieEntity(10, SAMPLE_MOVIE_THUMBNAIL_9, SAMPLE_MOVIE_TITLE_9, SAMPLE_MOVIE_SYNOPSIS_9, SAMPLE_MOVIE_YEAR_9));
 
         return movies;
     }
