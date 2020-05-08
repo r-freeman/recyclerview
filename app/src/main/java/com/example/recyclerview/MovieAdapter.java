@@ -1,5 +1,6 @@
 package com.example.recyclerview;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,9 +27,13 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         return new ViewHolder(view);
     }
 
+    @SuppressLint("DefaultLocale")
     @Override
     public void onBindViewHolder(@NonNull MovieAdapter.ViewHolder holder, int position) {
+        MovieEntity movie = movies.get(position);
 
+        holder.movieTitle.setText(String.format("%s (%d)", movie.getTitle(), movie.getYear()));
+        holder.movieSynopsis.setText(movie.getSynopsis());
     }
 
     @Override
