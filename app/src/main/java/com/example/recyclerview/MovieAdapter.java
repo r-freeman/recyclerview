@@ -1,6 +1,7 @@
 package com.example.recyclerview;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,9 +15,11 @@ import java.util.List;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
     private final List<MovieEntity> movies;
+    private final Context mContext;
 
-    public MovieAdapter(List<MovieEntity> movies) {
+    public MovieAdapter(List<MovieEntity> movies, Context mContext) {
         this.movies = movies;
+        this.mContext = mContext;
     }
 
     @NonNull
