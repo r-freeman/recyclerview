@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // connect the MovieAdapter to the RecyclerView
-        mAdapter = new MovieAdapter(movies);
+        mAdapter = new MovieAdapter(movies, MainActivity.this);
         recyclerView.setAdapter(mAdapter);
     }
 }
