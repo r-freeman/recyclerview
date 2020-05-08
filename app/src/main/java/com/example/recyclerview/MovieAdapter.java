@@ -3,6 +3,8 @@ package com.example.recyclerview;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,8 +37,16 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
+        TextView movieTitle;
+        TextView movieSynopsis;
+        ImageView movieThumbnail;
+
+        public ViewHolder(@NonNull View view) {
+            super(view);
+
+            movieTitle = view.findViewById(R.id.movie_title);
+            movieSynopsis = view.findViewById(R.id.movie_synopsis);
+            movieThumbnail = view.findViewById(R.id.movie_thumbnail);
         }
     }
 }
