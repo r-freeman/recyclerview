@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = "Movies";
 
     private RecyclerView recyclerView;
-    private _MovieAdapter mAdapter;
+    private MovieAdapter mAdapter;
     private RecyclerView.LayoutManager layoutManager;
     private List<MovieEntity> movies;
 
@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
-        mAdapter = new _MovieAdapter(movies, MainActivity.this);
+        // connect the MovieAdapter to the RecyclerView
+        mAdapter = new MovieAdapter(movies);
         recyclerView.setAdapter(mAdapter);
     }
 }

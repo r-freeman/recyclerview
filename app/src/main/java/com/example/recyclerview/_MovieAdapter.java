@@ -13,11 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class _MovieAdapter extends RecyclerView.Adapter<_MovieAdapter.ViewHolder> {
+public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
     private final List<MovieEntity> mMovies;
     private final Context mContext;
 
-    public _MovieAdapter(List<MovieEntity> mMovies, Context mContext) {
+    public MovieAdapter(List<MovieEntity> mMovies, Context mContext) {
         this.mMovies = mMovies;
         this.mContext = mContext;
     }
@@ -42,7 +42,7 @@ public class _MovieAdapter extends RecyclerView.Adapter<_MovieAdapter.ViewHolder
 
     @NonNull
     @Override
-    public _MovieAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MovieAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.movie_item, parent, false);
         return new ViewHolder(view);
@@ -50,7 +50,7 @@ public class _MovieAdapter extends RecyclerView.Adapter<_MovieAdapter.ViewHolder
 
     @SuppressLint("DefaultLocale")
     @Override
-    public void onBindViewHolder(@NonNull _MovieAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MovieAdapter.ViewHolder holder, int position) {
         MovieEntity movie = mMovies.get(position);
 
         holder.movieTitle.setText(String.format("%s (%d)", movie.getTitle(), movie.getYear()));
