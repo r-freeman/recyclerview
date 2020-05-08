@@ -42,6 +42,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         holder.movieTitle.setText(String.format("%s (%d)", movie.getTitle(), movie.getYear()));
         holder.movieSynopsis.setText(movie.getSynopsis());
+        holder.movieThumbnail.setImageResource(imageResourceId(mContext, movie.getThumbnail()));
     }
 
     @Override
