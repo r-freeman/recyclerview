@@ -30,6 +30,11 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
         return new ViewHolder(view);
     }
 
+    public int imageResourceId(Context mContext, String imageName) {
+        return mContext.getResources()
+                .getIdentifier("drawable/" + imageName, null, mContext.getPackageName());
+    }
+
     @SuppressLint("DefaultLocale")
     @Override
     public void onBindViewHolder(@NonNull MovieAdapter.ViewHolder holder, int position) {
